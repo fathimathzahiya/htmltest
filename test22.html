@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"><p>one child</p></div>
+    <div id="d2"><p>child 1</p><p>child 2</p></div>
+    <script>
+        let divs=document.querySelectorAll("div");
+        divs.forEach(div=>{
+            if(div.children.length>1){
+                div.style.border="2px solid black";
+            }
+        });
+    </script>
+</body>
+</html>
