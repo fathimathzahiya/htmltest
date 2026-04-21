@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src=""old1.jpg" width="100">
+    <img scr="new1,jpg" width="100">
+    <script>
+        let imgs=document.querySelectorAll("img");
+        imgs.forEach(img=>{
+         if(img.src.includes("old")){
+            img.src="updted.jpg";
+         }   
+        });
+    </script>
+</body>
+</html>
